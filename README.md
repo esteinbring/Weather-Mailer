@@ -1,7 +1,8 @@
 # Weather-Mailer
 
-This project uses Open-Meteo's API to get a weather forecast for the next 14 days.
-It then formats the data and forwards it via SMTP over Google's Gmail Server to an e-mail address of your choice.
+This project uses Open-Meteo's API to get a weather forecast for the next 14 days.  The default location is Berlin (Mitte), but can be freely defined using longitude and latitude. \
+The weather data returned includes the minimum and maximum temperature in degrees Celsius, as well as the probability of precipitation in percent and wind speed in km/h. \
+The data is formatted in a HTML table and sent using Google's SMTP Gmail server to a freely definable e-mail recipient with a personal salutation.
 
 ## Email
 This is how an e-mail to Theresa would like:
