@@ -21,8 +21,8 @@ def main():
     city = 'Berlin'
 
     # Insert the information for the person who will receive the weather data here
-    recipient_firstname = '<RECIPIENT E-MAIL ADDRESS>'
-    recipient_email = '<RECIPIENT FIRST NAME>'
+    recipient_firstname = '<RECIPIENT FIRSTNAME>'
+    recipient_email = '<RECIPIENT E-MAIL ADDRESS>'
 
     forecast_days = 14
 
