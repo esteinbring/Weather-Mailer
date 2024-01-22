@@ -5,9 +5,9 @@ The weather data returned includes the minimum and maximum temperature in degree
 The data is formatted in a HTML table and sent using Google's SMTP Gmail server to a freely definable e-mail recipient with a personal salutation.
 
 ## Email
-This is how an e-mail to Theresa would like:
+This is how an e-mail to Lisa would like:
 
-![Bildschirmfoto 2024-01-22 um 09 19 13](https://github.com/esteinbring/Weather-Mailer/assets/157313872/eea907cc-ae38-470b-9da6-64ce90c19b97)
+![Bildschirmfoto 2024-01-22 um 10 30 58](https://github.com/esteinbring/Weather-Mailer/assets/157313872/a8825ce7-4dcc-4d4c-ad23-763d6208a348)
 
 ## Setup 
 1. Follow [Google's tutorial](https://support.google.com/mail/answer/185833?hl=en) to generate an App-Password for the gmail account that will send the weather-e-mails. 
