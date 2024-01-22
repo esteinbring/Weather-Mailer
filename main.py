@@ -14,12 +14,13 @@ def main():
 
     logging.info("Weather Mailing Service started")
 
-    # location of the Berliner Fernsehturm
+    # Location of the Berliner Fernsehturm
     latitude = 52.52081
     longitude = 13.40941
     timezone = 'Europe/Berlin'
     city = 'Berlin'
-    
+
+    # Insert the information for the person who will receive the weather data here
     recipient_firstname = '<RECIPIENT E-MAIL ADDRESS>'
     recipient_email = '<RECIPIENT FIRST NAME>'
 
