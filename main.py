@@ -1,4 +1,6 @@
 import logging
+
+import config
 import mailing_service as ms
 import weather_service as ws
 
@@ -14,20 +16,10 @@ def main():
 
     logging.info("Weather Mailing Service started")
 
-    # Location of the Berliner Fernsehturm
-    latitude = 52.52081
-    longitude = 13.40941
-    timezone = 'Europe/Berlin'
-    city = 'Berlin'
-
-    # Insert the information for the person who will receive the weather data here
-    recipient_firstname = '<RECIPIENT FIRSTNAME>'
-    recipient_email = '<RECIPIENT E-MAIL ADDRESS>'
-
-    forecast_days = 14
+    
 
     try:
-        weather_forecast = ws.get_weather_forecast(latitude, longitude, timezone, forecast_days)
+        weather_forecast = ws.get_weather_forecast(config.latitude, config.longitude, config.timezone, config.forecast_days)
 
     except Exception as e:
 
@@ -36,9 +28,9 @@ def main():
         return
 
     try:
-        content = ms.generate_email_content(weather_forecast, recipient_firstname, forecast_days, city)
+        content = ms.generate_email_content(weather_forecast, config.recipient_firstname, config.forecast_days, config.city)
         
-        ms.send_email(recipient_email, content)
+        ms.send_email(config.recipient_email, content)
 
         logging.info("Weather Mailing Service finished")
 

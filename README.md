@@ -14,7 +14,7 @@ This is how an e-mail to Lisa would like:
 2. Configure 2 environment variables which contain the credentials. \
    ```export SENDER_EMAIL="<GMAIL ADDRESS>"``` \
    ```export SENDER_PASSWORD="<GMAIL APP PASSWORD>"```
-3. Configure the recipient email & firstname in the main.py file. \
+3. Configure the recipient email & firstname in the config.py file. \
    ```recipient_firstname = '<RECIPIENT MAIL ADDRESS>``` \
    ```recipient_email = '<RECIPIENT FIRSTNAME>'``` \
 4. Schedule the Weather-Mailer with crontab. The following cronjob will run the python script every 2 Mondays at 12 a.m. \
